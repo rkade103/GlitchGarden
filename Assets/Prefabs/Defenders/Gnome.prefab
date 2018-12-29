@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1150922185934940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 1.02, z: 0}
+  m_LocalPosition: {x: 3, y: 1, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4708861497888708}
@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954757652937118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -0.28, z: 0}
+  m_LocalPosition: {x: -0.08, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4620446769467828}
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 792dbe3cf0859fb4bb1cc22ac3128424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starCost: 100
+  starCost: 150
 --- !u!114 &114639914647022854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a2cc07069dc42d49b9b08cbc50a1c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1725404087887552, guid: 1e3275c54d649bb46af7e10ca315caeb, type: 2}
+  projectile: {fileID: 1478749801946206, guid: 1e3275c54d649bb46af7e10ca315caeb, type: 2}
   gun: {fileID: 1954757652937118}
 --- !u!212 &212124200699106184
 SpriteRenderer:
