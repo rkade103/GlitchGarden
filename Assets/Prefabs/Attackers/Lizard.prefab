@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114196300665148046}
   - component: {fileID: 50299510531510916}
   - component: {fileID: 60754584776630328}
+  - component: {fileID: 114080687085031644}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1205902129417162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.51, y: 1.28, z: 0}
+  m_LocalPosition: {x: 6.539884, y: 3.0579255, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060006240364840}
@@ -103,7 +104,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -118,29 +119,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.074999996, y: -0.59}
-      - {x: -0.074999996, y: -0.52}
-      - {x: -0.095, y: -0.48}
-      - {x: -0.225, y: -0.48999998}
-      - {x: -0.315, y: -0.24}
-      - {x: -0.375, y: -0.17}
-      - {x: -0.42499998, y: 0.099999994}
-      - {x: -0.48499998, y: 0.17999999}
-      - {x: -0.765, y: 0.17999999}
-      - {x: -0.885, y: -0.04}
-      - {x: -0.905, y: -0.11}
-      - {x: -0.905, y: -0.17999999}
-      - {x: -0.835, y: -0.22999999}
-      - {x: -0.78499997, y: -0.24}
-      - {x: -0.805, y: -0.26}
-      - {x: -0.865, y: -0.38}
-      - {x: -0.745, y: -0.42999998}
-      - {x: -0.805, y: -0.59}
-      - {x: -0.78499997, y: -0.65}
-      - {x: -0.72499996, y: -0.68}
-      - {x: -0.39499998, y: -0.68}
-      - {x: -0.325, y: -0.63}
-      - {x: -0.105, y: -0.63}
+    - - {x: -0.21653223, y: -0.31541634}
+      - {x: -0.21595383, y: -0.2768073}
+      - {x: -0.27417374, y: -0.25531006}
+      - {x: -0.33428812, y: -0.23539376}
+      - {x: -0.36028624, y: -0.18495107}
+      - {x: -0.35959673, y: -0.15058851}
+      - {x: -0.35892773, y: -0.10255766}
+      - {x: -0.35115385, y: 0.0056762695}
+      - {x: -0.36405325, y: 0.08887553}
+      - {x: -0.37139082, y: 0.20124674}
+      - {x: -0.50434685, y: 0.38369083}
+      - {x: -0.6754689, y: 0.37479377}
+      - {x: -0.739388, y: 0.2596891}
+      - {x: -0.8797946, y: 0.1838224}
+      - {x: -0.88938475, y: 0.108617306}
+      - {x: -0.8321276, y: 0.054232836}
+      - {x: -0.7725382, y: 0.019848347}
+      - {x: -0.69130707, y: 0.020258665}
+      - {x: -0.7725878, y: -0.097940445}
+      - {x: -0.764163, y: -0.21433878}
+      - {x: -0.7341962, y: -0.22112322}
+      - {x: -0.65018845, y: -0.24181247}
+      - {x: -0.61642265, y: -0.27377772}
+      - {x: -0.58039904, y: -0.30336714}
+      - {x: -0.534904, y: -0.34573317}
+      - {x: -0.4688549, y: -0.35096002}
+      - {x: -0.43609285, y: -0.29977345}
+      - {x: -0.43796968, y: -0.23552394}
+      - {x: -0.3740549, y: -0.2730782}
+      - {x: -0.27391243, y: -0.3134761}
 --- !u!95 &95495945357952198
 Animator:
   serializedVersion: 3
@@ -159,6 +167,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114080687085031644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205902129417162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068fc770a8b22824b9a34f733f8a1b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114196300665148046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f5a422dba73255459384097bc10e630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 100
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 2}
 --- !u!212 &212310704036976246
 SpriteRenderer:
