@@ -22,7 +22,19 @@ public class LevelLoader : MonoBehaviour {
         yield return new WaitForSeconds(waitTime);
         LoadNextScene();
     }
-	
+
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void LoadMainMenuScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Start Screen");
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
