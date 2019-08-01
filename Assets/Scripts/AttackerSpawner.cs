@@ -26,7 +26,6 @@ public class AttackerSpawner : MonoBehaviour {
     private void SpawnAttacker()
     {
         var randomIndex = Random.Range(0, attackers.Length);
-        Debug.Log("INDEX: " + randomIndex.ToString());
         Attacker attacker = attackers[randomIndex];
         Spawn(attacker);
     }
